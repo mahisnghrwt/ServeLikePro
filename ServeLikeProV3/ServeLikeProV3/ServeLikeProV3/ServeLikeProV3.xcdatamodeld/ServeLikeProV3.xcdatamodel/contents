@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14492.1" systemVersion="18G95" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Dishes" representedClassName="Dishes" syncable="YES" codeGenerationType="class">
+        <attribute name="dishCategory" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dishDesc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dishID" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="dishImage" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="dishName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dishPrice" optional="YES" attributeType="Integer 16" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="Orders" representedClassName="Orders" syncable="YES" codeGenerationType="class">
+        <attribute name="dish" optional="YES" attributeType="Transformable" customClassName="DishObject" syncable="YES"/>
+        <attribute name="orderID" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="staffID" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="tableNumber" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Dishes" positionX="-63" positionY="-18" width="128" height="135"/>
+        <element name="Orders" positionX="-63" positionY="27" width="128" height="105"/>
+    </elements>
+</model>
